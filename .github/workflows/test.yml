@@ -8,7 +8,7 @@ jobs:
     - name: Run Snyk to check for vulnerabilities
       uses: snyk/actions/maven@master
       env:
-        SNYK_TOKEN: ${{ secrets.f1a52531-e5b3-4367-9842-ce2fafbd7d57}}
+        SNYK_TOKEN: ${{f1a52531-e5b3-4367-9842-ce2fafbd7d57}}
       with:
           command: monitor
           args: --file=pom.xml
